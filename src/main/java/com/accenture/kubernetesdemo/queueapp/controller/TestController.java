@@ -25,14 +25,14 @@ public class TestController {
 	
 	@RequestMapping(path="hello")
 	public String doSometing(){
-		return "Hello World, I'm minikubetest2";
+		return "Hello World, I'm sending messages";
 	}
 	
 	
 	@RequestMapping(path="helloOthers")
 	public String doSometingRemote() throws RestClientException, URISyntaxException{
 		RestTemplate template = restTemplateBuilder.build();
-		String result = template.getForObject(new URI("http://minikubetest1:8080/hello"), String.class);
+		String result = template.getForObject(new URI("http://kubernetes-demo-queue-listener:8080/hello"), String.class);
 		return "Other says: "+result;
 	}
 	
