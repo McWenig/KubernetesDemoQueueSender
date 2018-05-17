@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.acenture</groupId>
-	<artifactId>kubernetesdemoqueuesender</artifactId>
+	<artifactId>kubernetes-demo-queue-sender</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>kubernetesdemoqueuesender</name>
+	<name>kubernetes-demo-queue-sender</name>
 	<description>Kubernetes Demo using a mysql database</description>
 
 	<parent>
